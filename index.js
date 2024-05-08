@@ -7,10 +7,6 @@ const app = express();
 
 const __dirname = import.meta.dirname;
 
-//console.log(__dirname + "views/layouts/main.hbs")
-
-//console.log(path.join(__dirname, "views/layouts/../partials/footer.hbs"))
-
 app.use(express.static(path.join(__dirname, '/public')))
 
 app.use('/css', express.static(path.join(__dirname, '/node_modules/bootstrap/dist/css/')))
